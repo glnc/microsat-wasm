@@ -1,0 +1,14 @@
+# generated demo web app files
+demo/bundle.js
+demo/microsat.wasm
+
+# release build
+release/*
+
+# generated and built files by emconfigure and emmake/make
+src/makefile
+src/microsat
+src/microsat.js
+src/microsat.wasm
+
+
