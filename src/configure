@@ -29,10 +29,10 @@ echo Version: `cat VERSION`
 rm -f makefile
 cat > makefile <<EOF
 microsat: microsat.c makefile
-	$CC $CFLAGS -o microsat microsat.c
+	$CC $CFLAGS -o microsat$FILE_SUFFIX microsat.c
 install: microsat
 	chmod +x microsat
 	cp microsat /usr/local/bin
 clean:
-	rm -f microsat makefile
+	rm -f microsat microsat.js microsat.wasm makefile
 EOF
