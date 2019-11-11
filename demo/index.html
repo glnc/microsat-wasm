@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="language" content="en" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>microsat-wasm</title>
+	<script defer src="./bundle.js"></script>
+	<style>
+		* { line-height: 1.25rem; }
+		body { display: flex; flex-direction: column; }
+		textarea { height: 20em; }
+		label:not(:first-of-type), button { margin-top: 2em; }
+		input, textarea { margin-top: 0.5em; }
+		label { font-weight: bold; }
+	</style>
+</head>
+<body>
+	<h1>microsat-wasm</h1>
+
+	<label for="input">DIMACS input</label>
+	<textarea id="input">c v3 1 2 4
+c d1 6
+p cnf 7 11
+1 0
+-1 2 0
+-4 2 0
+-5 2 0
+-6 3 0
+-7 3 0
+-5 7 0
+-2 4 5 0
+-3 6 7 0
+-6 -7 0
+-2 -6 0</textarea>
+
+	<label for="arguments">Command line arguments</label>
+	<input type="text" id="arguments" value="--propagate">
+
+	<button id="run">Run</button>
+	<textarea id="output" disabled></textarea>
+</body>
+</html>
