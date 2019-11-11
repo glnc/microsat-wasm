@@ -6,7 +6,7 @@
 /**
  * The total memory in bytes. This value should be the same as the value of TOTAL_MEMORY in "-s TOTAL_MEMORY" argument for emcc.
  */
-const INITIAL_TOTAL_MEMORY_BYTES = 67108864;	// TOOD: check value
+const INITIAL_TOTAL_MEMORY_BYTES = 16777216
 
 /**
  * The page size in bytes.
