@@ -15,13 +15,13 @@ make clean
 
 # build
 echo "\n### Building release build..."
-## TODO: compile microsat
-emmake make
+# compile microsat
+FILE_SUFFIX=".js" CFLAGS="-O3 -s ALLOW_MEMORY_GROWTH=1 -s INVOKE_RUN=0 -s FORCE_FILESYSTEM=1 -s EXIT_RUNTIME=1 --pre-js ../src_js/prerun.js -s MODULARIZE=1 -s 'EXPORT_NAME=microsat'" CC=emcc emconfigure ./configure && emmake make
 
 cd ..
 cp ./src_js/Wrapper.js ./release/Wrapper.js
-cp ./src/build/release/bin/microsat.js ./release/microsat.js
-cp ./src/build/release/bin/microsat.wasm ./release/microsat.wasm
+cp ./src/microsat.js ./release/microsat.js
+cp ./src/microsat.wasm ./release/microsat.wasm
 
 # optionally build and run demo web app
 if [ -n "$1" -a "$1" = "demo" ]
