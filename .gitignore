@@ -5,10 +5,8 @@ demo/microsat.wasm
 # release build
 release/*
 
-# generated and built files by emconfigure and emmake/make
+# microsat files
 src/makefile
 src/microsat
 src/microsat.js
 src/microsat.wasm
-
-

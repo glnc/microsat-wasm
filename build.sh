@@ -15,7 +15,6 @@ make clean
 
 # build
 echo "\n### Building release build..."
-# compile microsat
 FILE_SUFFIX=".js" CFLAGS="-O3 -s ALLOW_MEMORY_GROWTH=1 -s INVOKE_RUN=0 -s FORCE_FILESYSTEM=1 -s EXIT_RUNTIME=1 --pre-js ../src_js/prerun.js -s MODULARIZE=1 -s 'EXPORT_NAME=microsat'" CC=emcc emconfigure ./configure && emmake make
 
 cd ..
