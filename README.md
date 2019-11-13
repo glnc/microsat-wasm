@@ -38,8 +38,8 @@ microsat.run("p cnf 5 3 [...]", ["--propagate"]).then(result => {
 ```
 
 ## Original License
-Copyright © 2018 Christian Bettinger and Anna Schmitt
-Copyright © 2018 Armin Biere
+Copyright © 2018 Christian Bettinger and Anna Schmitt  
+Copyright © 2018 Armin Biere  
 Copyright © 2014-2018 Marijn Heule
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
