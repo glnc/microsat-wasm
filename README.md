@@ -1,7 +1,7 @@
 # microsat-wasm
 Compile microsat to WebAssembly using emscripten.
 
-This is a fork of [microsat](https://github.com/glnc/microsat) 2019-07-03 by Christian Bettinger and Anna Schmitt, originally created by Armin Biere and Marijn Heule.
+This is a fork of [microsat](https://github.com/glnc/microsat) 2020-05-14 by Christian Bettinger and Anna Schmitt, originally created by Armin Biere and Marijn Heule.
 
 Tested on Ubuntu 16.04 LTS.
 
